@@ -16,7 +16,7 @@ NOTE: Because of the limitation of UnityPackageManager, it needs to install depe
 
 This project use following resources.
 
-- https://github.com/XJINE/Unity_CsvFileReadWriter
+- https://github.com/XJINE/Unity_TextFileReadWriter
 
 ## How to Use
 

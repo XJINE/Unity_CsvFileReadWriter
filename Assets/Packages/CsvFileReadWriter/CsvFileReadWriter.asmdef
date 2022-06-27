@@ -1,0 +1,16 @@
+{
+    "name": "CsvFileReadWriter",
+    "rootNamespace": "",
+    "references": [
+        "GUID:a9545b88c1af3a9449fb9921741ce23a"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

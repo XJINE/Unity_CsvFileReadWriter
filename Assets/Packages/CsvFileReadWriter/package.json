@@ -1,0 +1,19 @@
+{
+    "name"       : "com.xjine.csv_file_read_wrietr",
+    "displayName": "Csv File Read Writer", 
+    "version"    : "1.0.1",
+    "unity"      : "2021.3",
+    "description": "CsvFileReadWriter provides simple functions to read/write csv file.",
+    "author"     :
+    {
+        "name": "XJINE",
+        "url" : "https://github.com/XJINE"
+    },
+    "keywords":
+    [
+        "CSV", "Save"
+    ],
+    "dependencies":
+    {
+    }
+}

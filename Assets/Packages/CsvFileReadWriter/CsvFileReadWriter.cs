@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using UnityEngine;
 
 public static class CsvFileReadWriter
@@ -81,7 +82,7 @@ public static class CsvFileReadWriter
             text += value + ",";
         }
 
-        text = text.Remove(text.Length - 1, 1);
+        text = text.TrimEnd(',');
 
         if (forceExtension && !path.EndsWith(".csv"))
         {
@@ -89,6 +90,30 @@ public static class CsvFileReadWriter
         }
 
         return TextFileReadWriter.Write(path, text);
+    }
+
+    public static string[] RemoveNullOrWhiteSpaces(IEnumerable<string> values)
+    {
+        if (values == null)
+        {
+            return null;
+        }
+
+        var result = new List<string>(values.Count());
+
+        for (var i = 0; i < values.Count(); i++)
+        {
+            var value = values.ElementAt(i);
+
+            if (string.IsNullOrWhiteSpace(value))
+            {
+                continue;
+            }
+
+            result.Add(value);
+        }
+
+        return result.ToArray();
     }
 
     #endregion Method

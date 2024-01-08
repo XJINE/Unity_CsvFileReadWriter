@@ -20,6 +20,8 @@ public class Sample : MonoBehaviour
                 return;
             }
 
+            values = CsvFileReadWriter.RemoveNullOrWhiteSpaces(values);
+
             intArray = new int[values.Length];
 
             for (var i = 0; i < intArray.Length; i++)
